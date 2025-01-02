@@ -1,4 +1,5 @@
 import 'package:buy_sushi/components/button.dart';
+import 'package:buy_sushi/themes/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,7 +9,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 138, 60, 55),
+      backgroundColor: primaryColor,
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: Column(
@@ -52,7 +53,11 @@ class IntroPage extends StatelessWidget {
             const SizedBox(height: 25,),
         
             //get started button
-            MyButton(text: "Get Started!")
+            MyButton(text: "Get Started!",
+            onTap: (){
+              // go to the menu page
+              Navigator.pushNamed(context, '/menupage');
+            },)
           ],
         ),
       )
