@@ -13,7 +13,7 @@ class MyAApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IntroPage(),
+      home: const IntroPage(),
       routes: {
         '/intropage': (context) => const IntroPage(),
         'menupage': (context) => const MenuPage(),

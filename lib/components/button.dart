@@ -17,17 +17,17 @@ class MyButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 192, 93, 86),
           borderRadius: BorderRadius.circular(40),),
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(text,
-            style: TextStyle(color: Colors.white),),
+            style: const TextStyle(color: Colors.white),),
       
             const SizedBox(width: 10,),
       
             //icon
-            Icon(Icons.arrow_forward),
+            const Icon(Icons.arrow_forward),
           ],
         ),
       ),

@@ -34,7 +34,7 @@ class MenuPage extends StatelessWidget {
               Column(
                 children: [
                   //promo message
-              Text("Get 30% Promo"),
+              const Text("Get 30% Promo"),
 
               const SizedBox(height: 25,),
 
